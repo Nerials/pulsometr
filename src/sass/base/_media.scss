@@ -1,0 +1,32 @@
+@media (max-width: 1200px) {
+	.promo {
+		.header {
+			justify-content: space-around;
+		}	
+		&__header {
+			margin-right: 60px;
+		}
+		&__subheader {
+			margin-right: 60px;
+		}
+		&__icons {
+			margin-right: 60px;
+		}
+		&__link {
+			margin-right: 60px;
+		}
+	}
+
+	.button_main {
+		margin-right: 60px;
+	}
+
+	.advantages {
+		&__cards {
+			justify-content: space-around;
+		}
+	}
+}
+
+@media (max-width: 991px)
+	
