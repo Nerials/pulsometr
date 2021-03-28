@@ -40,6 +40,22 @@
 	.feed-form {
 		margin-left: 70px;
 	}
+    .carousel {
+        &__simple {
+            width: 600px;
+        }
+    }
+    .catalog {
+        &__content {
+            padding: 0 30px;
+        }
+        &__tab {
+            width: 200px;
+        }
+        &-item {
+            width: 280px;
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -115,6 +131,52 @@
 			height: 50px;
 		}
 	}
+    .carousel {
+        &__simple {
+            width: 500px;
+        }
+    }
+    .slick-dots {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-bottom: 0;
+        li {
+            list-style: none;
+            padding: 0 10px;
+            button {
+                border-radius: 50%;
+                background-color: $red;
+                color: white;
+                border: none;
+                height: 45px;
+                width: 45px;
+            }
+        }
+        
+    }
+    .catalog {
+        &__content {
+            padding: 0 50px;
+        }
+        .title {
+            font-size: 28px;
+        }
+        &__tabs {
+            margin-top: 50px;
+        }
+        &__tab {
+            width: 180px;
+            font-size: 17px;
+        }
+        &-item {
+            width: 270px;
+            &__descr {
+                font-size: 13px;
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -176,6 +238,23 @@
 			text-align: center;
 		}
 	}
+    .carousel {
+        &__simple {
+            width: 350px;
+        }
+    }
+    .catalog {
+        .title {
+            font-size: 27px;
+        }
+        &__tabs {
+            margin-top: 50px;
+        }
+        &__tab {
+            width: 103px;
+            font-size: 11px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
