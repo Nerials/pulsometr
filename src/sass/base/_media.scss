@@ -28,18 +28,21 @@
     }
 
     .consultation {
-		&__descr {
-			margin-left: 70px;
-		}
+        &__descr {
+            margin-left: 70px;
+        }
     }
-	.title {
-		&_left {
-			margin-left: 70px;
-		}
-	}
-	.feed-form {
-		margin-left: 70px;
-	}
+    .title {
+        &_left {
+            margin-left: 70px;
+        }
+    }
+    .feed-form {
+        margin-left: 70px;
+        &_mt25 {
+            margin-left: 0px;  
+        }
+    }
     .carousel {
         &__simple {
             width: 600px;
@@ -111,26 +114,26 @@
             margin-top: 10px;
         }
     }
-	.title {
-		&_left {
-			font-size: 30px;
-		}
-	}
-	.consultation {
-		&__descr {
-			font-size: 18px;
-		}
-	}
-	.feed-form {
-		input {
-			height: 45px;
-		}
-	}
-	.button {
-		&_submit {
-			height: 50px;
-		}
-	}
+    .title {
+        &_left {
+            font-size: 30px;
+        }
+    }
+    .consultation {
+        &__descr {
+            font-size: 18px;
+        }
+    }
+    .feed-form {
+        input {
+            height: 45px;
+        }
+    }
+    .button {
+        &_submit {
+            height: 50px;
+        }
+    }
     .carousel {
         &__simple {
             width: 500px;
@@ -154,7 +157,6 @@
                 width: 45px;
             }
         }
-        
     }
     .catalog {
         &__content {
@@ -174,6 +176,50 @@
             width: 270px;
             &__descr {
                 font-size: 13px;
+            }
+        }
+    }
+    .reviews {
+        &__item {
+            width: 650px;
+        }
+        &__descr {
+            font-size: 14px;
+        }
+        hr {
+            width: 690px;
+            margin-left: 30px;
+            margin-right: 30px;
+        }
+    }
+    .footer {
+        &__info {
+            width: 400px;
+            height: 235px;
+        }
+        &__adress {
+            font-size: 16px;
+        }
+        &__social-item {
+            width: 40px;
+            height: 40px;
+            img {
+                height: 24px;
+            }
+        }
+    }
+    #consultation {
+        width: 360px;
+        min-height: 380px;
+    }
+    #order {
+        width: 360px;
+        min-height: 380px;
+    }
+    .modal {
+        &__subtitle {
+            &_fsz17 {
+                font-size: 17px;
             }
         }
     }
@@ -231,13 +277,13 @@
             font-size: 25px;
         }
     }
-	.title {
-		&_left {
-			font-size: 28px;
-			margin: 0 auto;
-			text-align: center;
-		}
-	}
+    .title {
+        &_left {
+            font-size: 28px;
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
     .carousel {
         &__simple {
             width: 350px;
@@ -255,6 +301,49 @@
             font-size: 11px;
         }
     }
+
+    .reviews {
+        &__item {
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 300px;
+        }
+        hr {
+            width: 90%;
+            margin-left: 0;
+            margin-right: 20px;
+        }
+        &__img {
+            margin: 0 auto;
+        }
+        &__title {
+            margin-top: 10px;
+            text-align: center;
+        }
+        &__subtitle {
+            text-align: center;
+        }
+    }
+
+    .footer {
+        &__info {
+            width: 300px;
+            height: 180px;
+            padding: 25px 30px 30px 30px;
+        }
+        &__adress {
+            line-height: 14px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+    }
+    .modal {
+        &__close {
+            right: 5px;
+            top: 5px;
+        }
+    }
+    
 }
 
 @media (max-width: 575px) {
@@ -271,7 +360,7 @@
                 margin-top: 45px;
                 font-size: 18px;
                 span {
-                    font-size: 28px;
+                    font-size: 27px;
                 }
             }
             &__contacts {
@@ -282,12 +371,12 @@
             }
         }
         &__header {
-            font-size: 28px;
+            font-size: 24px;
             margin-left: auto;
             margin-right: auto;
         }
         &__subheader {
-            font-size: 15px;
+            font-size: 13px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -298,7 +387,7 @@
         // }
 
         &__icons {
-            width: 330px;
+            width: 280px;
             margin-left: auto;
             margin-right: auto;
         }
@@ -308,9 +397,10 @@
             height: 35px;
         }
         &__icon {
-            font-size: 13px;
+            width: 85px;
+            font-size: 12px;
             img {
-                width: 40%;
+                width: 35%;
             }
         }
         .button_main {
@@ -321,29 +411,137 @@
         }
     }
 
-	.title {
-		&_left {
-			font-size: 23px;
-		}
-	}
-	.consultation {
-		&__descr {
-			font-size: 14px;
-			margin: 0 auto;
-			margin-top: 50px;
-			text-align: center;
-		}
-	}
-	.feed-form {
-		margin: 0 auto;
-		margin-top: 30px;
-		justify-content: center;
-		width: 280px;
-		
-	}
+    .advantages {
+        .title {
+            font-size: 21px;
+        }
+        &__card {
+            img {
+                width: 30%;
+            }
+        }
+    }
+
+    .title {
+        &_left {
+            font-size: 20px;
+        }
+    }
+    .consultation {
+        min-height: 650px;
+        &__descr {
+            font-size: 13px;
+            margin: 0 auto;
+            margin-top: 50px;
+            text-align: center;
+        }
+    }
+    .feed-form {
+        margin: 0 auto;
+        margin-top: 30px;
+        justify-content: center;
+        width: 270px;
+        input {
+            height: 40px;
+        }
+    }
+
+    .button {
+        &_submit {
+            height: 45px;
+        }
+    }
+
     .carousel {
         &__simple {
-            width: 310px;
+            width: 280px;
+        }
+    }
+    .slick-dots {
+        li {
+            button {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+
+    .catalog {
+        .title {
+            font-size: 24px;
+            line-height: 27px;
+        }
+        &__tab {
+            width: 80px;
+            height: 40px;
+            line-height: 38px;
+            font-size: 10px;
+        }
+        .catalog__tab:nth-child(3) {
+            line-height: 17px;
+        }
+
+        &-item {
+            &__img {
+                height: 180px;
+            }
+            &__descr {
+                font-size: 15px;
+            }
+            &__new-price {
+                font-size: 16px;
+            }
+            // hr {
+            //     margin-top: -40px;
+            // }
+        }
+        .button_mini {
+            width: 120px;
+        }
+        .title {
+            font-size: 27px;
+        }
+    }
+
+    .reviews {
+        &__descr {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .title {
+            font-size: 27px;
+        }
+        &__img {
+            width: 155px;
+            height: 155px;
+        }
+    }
+    .footer {
+        &__info {
+            width: 280px;
+            height: 170px;
+        }
+        &__adress {
+            line-height: 15px;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+		&__phone {
+			margin-bottom: 30px;
+		}
+    }
+    #consultation {
+        width: 290px;
+        min-height: 340px;
+    }
+    #order {
+        width: 290px;
+        min-height: 340px;
+    }
+    .feed-form {
+        &_mt25 {
+            width: 255px;
+            margin-left: -20px;
         }
     }
 }
